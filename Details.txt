@@ -1,0 +1,88 @@
+Topics:
+
+Initialize an npm project which enables the usage of npm packages
+
+NPM Project Setup:
+  1. npm init --> in root folder of project
+    package.json:
+      The package. json file is the heart of any Node project. It records important metadata about a project which is required before publishing to NPM, and also defines functional attributes of a project that npm uses to install dependencies, run scripts, and identify the entry point to our package.
+  2. npm install <required package from npm>
+  3. start using the package using import statements
+
+npx --> node package exectables
+
+package/libraries
+  eg: lodash, chart.js
+
+
+Multi Page App: 
+  https://retail.onlinesbi.sbi/personal/
+  A multiple refresh everytime to download common html codes/assets during interaction.
+  which leads lots of request and data consumtption and not being smooth
+
+Single Page Application:
+  SPA, loads only the specific contents which needs changes and makes requests/assets call calls only for the specific region of the site
+
+React Setup:
+  1. npx create-react-app <project-name>
+  2. cd <project-name>
+  3. npm start
+  4. Start Development
+
+React:
+  Structure of React & Folder Structure
+
+  jsx --> javascript xml, which permitts to write html elements inside js file
+
+  babeljs conversion
+  
+  className instead of class ( class is a keyword in js )
+    class is a keyword for creating blueprints of user defined object
+    because of which we need to use className instead of class jsx syntax
+
+  React  SPA:
+    Virtual DOM
+    The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM.
+
+  Render:
+    strict mode -> check erros & warnings
+    var, expression
+    Components:
+      Building blocks of the app ( reusable jsx functions )
+    Props:
+      attributes for a component while using It
+      EG: 
+        const CardBtn = ({ title, num }) => {
+          return (
+            <div className='card' >
+              <h1>{num}</h1>
+              <h3>{title}</h3>
+              <button>Know More</button>
+            </div>
+          );
+        }
+        Usage:
+          <CardBtn title={'Mentors'} num={432} />
+    Conditional Render:
+      Conditionaly render the elements
+      {/* Learner will be visible only when showLearner is true */}
+      {showLearners && <CardBtn title={'Learners'} num={123} />}
+      {/* Conditional operator --> ? */}
+      {showMentors ?
+        (
+          <CardBtn title={'Mentors'} num={432} />
+        ) : ""
+      }
+    
+    List Render
+    
+    
+
+Tasks Discussion:
+  1. Simple Desiging with React JS
+
+Next Session:
+  state handling, Re-Render
+
+  Task:
+    2. Add to Cart & Remove from Cart
