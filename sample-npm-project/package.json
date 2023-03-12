@@ -1,0 +1,16 @@
+{
+  "name": "sample-npm-project",
+  "version": "1.0.0",
+  "description": "Sample Project for discussion of NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.2.1",
+    "lodash": "^4.17.21"
+  },
+  "type": "module"
+}
